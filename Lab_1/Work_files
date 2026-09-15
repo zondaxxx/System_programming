@@ -1,0 +1,71 @@
+sudo apt-get update
+sudo apt-get install gcc gdb fasm mc
+fasm Rulev.asm
+ld -m elf_i386 Rulev.o -o Rulev
+./Rulev
+gcc C_version.c -o C_version
+./C_version
+gdb Rulev
+(gdb) disassemble _start
+(gdb) quit
+gdb C_version
+(gdb) disassemble main
+(gdb) quit
+gdb -batch -ex "disassemble _start" Rulev > Disassemble
+gdb -batch -ex "disassemble main" C_version >> Disassemble
+mkdir sandbox
+mv Rulev.asm Rulev.o Rulev C_version.c C_version Disassemble sandbox
+
+mkdir Work
+cd Work
+mkdir "Лабораторная работа №1!"
+mkdir "Рулев Константин Александрович"
+
+chmod 772 "Лабораторная работа №1!"
+chmod 200 "Рулев Константин Александрович"
+ls -al
+
+touch "Text @1"
+touch "Text \$2"
+touch "Text  #3"
+
+echo "Птица говорун отличается умом и сообразительностью!" > "Text @1"
+echo "Отличается умом, отличается сообразительностью..." >> "Text @1"
+cat "Text @1"
+
+cat "Text @1" > "Text \$2"
+cat "Text \$2"
+
+mv "Text \$2" "Лабораторная работа №1!"
+cp "Text @1" "Рулев Константин Александрович"
+
+gzip "Text @1"
+gzip "Text  #3"
+tar -cf MyAchiv.tar "Text @1.gz" "Text  #3.gz"
+gzip -d "Text @1.gz"
+gzip -d "Text  #3.gz"
+ls -al
+
+head -n 1 "Text @1" >> "Text  #3"
+echo "Будь осторожен! Преступник вооружен!" >> "Text  #3"
+cat "Text  #3"
+
+tail -n 1 "Text @1" > "Рулев Константин Александрович/Result_one"
+head -n 1 "Text @1" >> "Рулев Константин Александрович/Result_one"
+cat "Рулев Константин Александрович/Result_one"
+
+mv "Рулев Константин Александрович/Result_one" "Рулев Константин Александрович/Result_two"
+
+ls "Рулев Константин Александрович" | grep "^T" > "Лабораторная работа №1!/Result_3"
+cat "Рулев Константин Александрович"/T* >> "Лабораторная работа №1!/Result_3"
+
+uname -a >> "Лабораторная работа №1!/Result_3"
+date >> "Лабораторная работа №1!/Result_3"
+cat "Лабораторная работа №1!/Result_3"
+
+cd ..
+mkdir Lab_1
+mv sandbox Work Work_files Lab_1
+git add .
+git commit -m "Lab_1"
+git push
