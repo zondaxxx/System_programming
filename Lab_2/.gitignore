@@ -1,0 +1,13 @@
+# артефакты сборки
+*.o
+task1_reverse
+task2_matrix
+task3_triangle
+task4_digit_sum
+task4_digit_sum_stripped
+task4_digit_sum_N
+task5_digit_sum
+task5_digit_sum_Os
+task5_min_c
+task5_min64
+task5_min32

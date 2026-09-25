@@ -1,0 +1,6 @@
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ ./task2_matrix | wc -l
+25
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ ./task2_matrix | head -1 | tr -d '\n' | wc -c
+12
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ ./task2_matrix | tr -d '\n' | wc -c
+300

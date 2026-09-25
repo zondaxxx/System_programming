@@ -1,0 +1,30 @@
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ fasm task2_matrix.asm
+flat assembler  version 1.73.32  (16384 kilobytes memory)
+3 passes, 1224 bytes.
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ ld task2_matrix.o -o task2_matrix
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ ./task2_matrix
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;

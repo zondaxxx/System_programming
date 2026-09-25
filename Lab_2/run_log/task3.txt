@@ -1,0 +1,29 @@
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ fasm task3_triangle.asm
+flat assembler  version 1.73.32  (16384 kilobytes memory)
+3 passes, 1248 bytes.
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ ld task3_triangle.o -o task3_triangle
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ ./task3_triangle
+;
+;;
+;;;
+;;;;
+;;;;;
+;;;;;;
+;;;;;;;
+;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;

@@ -1,0 +1,7 @@
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ fasm task1_reverse.asm
+flat assembler  version 1.73.32  (16384 kilobytes memory)
+3 passes, 1272 bytes.
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ ld task1_reverse.o -o task1_reverse
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ ./task1_reverse
+S          = TTaQgEqQJZdfGgqazcJpCDzwNgDdwpM
+S reversed = MpwdDgNwzDCpJczaqgGfdZJQqEgQaTT

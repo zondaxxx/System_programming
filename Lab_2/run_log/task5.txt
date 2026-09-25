@@ -1,0 +1,6 @@
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ gcc task5_digit_sum.c -o task5_digit_sum
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ ./task5_digit_sum
+Sum of digits of 2710058798 = 47
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ ls -l task4_digit_sum task5_digit_sum
+-rwxrwxrwx 1 codespace codespace  8944 Sep 25 06:48 task4_digit_sum
+-rwxrwxrwx 1 codespace codespace 15976 Sep 25 06:48 task5_digit_sum

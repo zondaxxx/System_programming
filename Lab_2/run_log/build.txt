@@ -1,0 +1,10 @@
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ ./build.sh
+/usr/bin/ld: warning: task5_min_c has a LOAD segment with RWX permissions
+Размеры исполняемых файлов (байт):
+    8944  task4_digit_sum
+    8656  task4_digit_sum_stripped
+   15976  task5_digit_sum
+   14472  task5_digit_sum_Os
+     161  task5_min32
+     202  task5_min64
+     848  task5_min_c

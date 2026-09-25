@@ -1,0 +1,30 @@
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ gdb -batch -ex 'disassemble _start' task4_digit_sum
+Dump of assembler code for function _start:
+   0x0000000000401000 <+0>:	movabs $0x402008,%rsi
+   0x000000000040100a <+10>:	mov    $0x1e,%rdx
+   0x0000000000401011 <+17>:	call   0x401070
+   0x0000000000401016 <+22>:	mov    0xfe3(%rip),%rax        # 0x402000
+   0x000000000040101d <+29>:	mov    $0xa,%rcx
+   0x0000000000401024 <+36>:	xor    %rbx,%rbx
+   0x0000000000401027 <+39>:	xor    %rdx,%rdx
+   0x000000000040102a <+42>:	div    %rcx
+   0x000000000040102d <+45>:	add    %rdx,%rbx
+   0x0000000000401030 <+48>:	test   %rax,%rax
+   0x0000000000401033 <+51>:	jne    0x401027 <_start+39>
+   0x0000000000401035 <+53>:	mov    %rbx,%rax
+   0x0000000000401038 <+56>:	xor    %rbx,%rbx
+   0x000000000040103b <+59>:	xor    %rdx,%rdx
+   0x000000000040103e <+62>:	div    %rcx
+   0x0000000000401041 <+65>:	add    $0x30,%rdx
+   0x0000000000401045 <+69>:	push   %rdx
+   0x0000000000401046 <+70>:	inc    %rbx
+   0x0000000000401049 <+73>:	test   %rax,%rax
+   0x000000000040104c <+76>:	jne    0x40103b <_start+59>
+   0x000000000040104e <+78>:	pop    %rax
+   0x000000000040104f <+79>:	call   0x401085
+   0x0000000000401054 <+84>:	dec    %rbx
+   0x0000000000401057 <+87>:	jne    0x40104e <_start+78>
+   0x0000000000401059 <+89>:	mov    $0xa,%rax
+   0x0000000000401060 <+96>:	call   0x401085
+   0x0000000000401065 <+101>:	call   0x4010b0
+End of assembler dump.

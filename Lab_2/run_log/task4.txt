@@ -1,0 +1,6 @@
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ fasm task4_digit_sum.asm
+flat assembler  version 1.73.32  (16384 kilobytes memory)
+3 passes, 1256 bytes.
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ ld task4_digit_sum.o -o task4_digit_sum
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ ./task4_digit_sum
+Sum of digits of 2710058798 = 47

@@ -1,0 +1,4 @@
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ ./task3_triangle | wc -l
+24
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ ./task3_triangle | tr -d '\n' | wc -c
+300

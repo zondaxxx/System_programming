@@ -1,0 +1,28 @@
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ gcc -Os -s task5_digit_sum.c -o task5_digit_sum_Os
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ gcc -Os -s -static -nostdlib -fno-asynchronous-unwind-tables -fno-stack-protector -Wl,--gc-sections -Wl,--build-id=none -Wl,-N task5_min.c -o task5_min_c
+/usr/bin/ld: warning: task5_min_c has a LOAD segment with RWX permissions
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ ./task5_min_c
+47
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ strip -o task4_digit_sum_stripped task4_digit_sum
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ ./task4_digit_sum_stripped
+Sum of digits of 2710058798 = 47
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ fasm task5_min64.asm task5_min64
+flat assembler  version 1.73.32  (16384 kilobytes memory)
+2 passes, 202 bytes.
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ chmod +x task5_min64
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ ./task5_min64
+47
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ fasm task5_min32.asm task5_min32
+flat assembler  version 1.73.32  (16384 kilobytes memory)
+2 passes, 161 bytes.
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ chmod +x task5_min32
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ ./task5_min32
+47
+@zondaxxx ➜ /workspaces/System_programming/Lab_2 (main) $ ls -l task4_digit_sum task4_digit_sum_stripped task5_min64 task5_min32 task5_digit_sum task5_digit_sum_Os task5_min_c
+-rwxrwxrwx 1 codespace codespace  8944 Sep 25 06:48 task4_digit_sum
+-rwxrwxrwx 1 codespace codespace  8656 Sep 25 06:48 task4_digit_sum_stripped
+-rwxrwxrwx 1 codespace codespace 15976 Sep 25 06:48 task5_digit_sum
+-rwxrwxrwx 1 codespace codespace 14472 Sep 25 06:48 task5_digit_sum_Os
+-rwxrwxrwx 1 codespace codespace   161 Sep 25 06:48 task5_min32
+-rwxrwxrwx 1 codespace codespace   202 Sep 25 06:48 task5_min64
+-rwxrwxrwx 1 codespace codespace   848 Sep 25 06:48 task5_min_c
