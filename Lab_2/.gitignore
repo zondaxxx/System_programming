@@ -11,3 +11,6 @@ task5_digit_sum_Os
 task5_min_c
 task5_min64
 task5_min32
+build/
+__pycache__/
+.ipynb_checkpoints/

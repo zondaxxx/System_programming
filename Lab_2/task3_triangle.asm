@@ -1,11 +1,8 @@
-; Лабораторная работа №2. Задание 3. Вариант 16.
-; Заполнить память N заданными символами и вывести их в виде треугольника:
-; в первой строке 1 символ, во второй 2 и т.д., пока не выведены все N символов.
 format ELF64
 public _start
 
-N = 300                           ; количество символов (1+2+...+24 = 300)
-D = ';'                           ; заданный символ
+N = 300
+D = ';'
 
 section '.bss' writable
   buf db N dup (?)
@@ -15,7 +12,7 @@ section '.data' writable
 
 section '.text' executable
 _start:
-    ; заполняем память N символами D
+
     mov rdi, buf
     mov rcx, N
     mov al, D
@@ -25,27 +22,26 @@ _start:
     dec rcx
     jnz .fill
 
-    ; выводим треугольник
-    mov rsi, buf                  ; текущая позиция в памяти
-    mov rcx, 1                    ; длина текущей строки
+    mov rsi, buf
+    mov rcx, 1
   .row:
     mov rdx, rcx
-    call print                    ; rcx символов из памяти
+    call print
     call newline
-    add rsi, rcx                  ; сдвигаем позицию на выведенное количество
-    inc rcx                       ; следующая строка длиннее на 1
-    cmp rsi, buf + N              ; пока не выведены все N символов
+    add rsi, rcx
+    inc rcx
+    cmp rsi, buf + N
     jb .row
     call exit
 
 section '.print' executable
-; вывод на экран rdx байт, начиная с адреса rsi
+
 print:
     push rax
     push rbx
     push rcx
-    mov eax, 4                    ; sys_write
-    mov ebx, 1                    ; stdout
+    mov eax, 4
+    mov ebx, 1
     mov ecx, esi
     int 0x80
     pop rcx
@@ -53,7 +49,6 @@ print:
     pop rax
     ret
 
-; вывод перевода строки
 newline:
     push rsi
     push rdx
@@ -66,6 +61,6 @@ newline:
 
 section '.exit' executable
 exit:
-    mov eax, 1                    ; sys_exit
+    mov eax, 1
     mov ebx, 0
     int 0x80

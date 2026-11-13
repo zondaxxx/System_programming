@@ -1,10 +1,3 @@
-/* Лабораторная работа №2. Задание 5. Вариант 16.
-   Минимизированная версия на C: без libc и стартового кода,
-   системные вызовы делаются напрямую через инструкцию syscall.
-   Сборка:
-   gcc -Os -s -static -nostdlib -fno-asynchronous-unwind-tables -fno-stack-protector \
-       -Wl,--gc-sections -Wl,--build-id=none -Wl,-N task5_min.c -o task5_min_c */
-
 static void sys_write(const char *buf, unsigned long len)
 {
     __asm__ volatile ("syscall"
